@@ -3,14 +3,14 @@ package org.example.model;
 import org.example.model.enums.LampType;
 
 public class Lamp {
-    private int globRating;
-    private boolean battery;
     private LampType style;
+    private boolean battery;
+    private int globRating;
 
-    public Lamp(int globRating, boolean battery, LampType style) {
-        this.globRating = globRating;
-        this.battery = battery;
+    public Lamp( LampType style, boolean battery,int globRating) {
         this.style = style;
+        this.battery = battery;
+        this.globRating = globRating;
     }
 
     public void turnOn(){
